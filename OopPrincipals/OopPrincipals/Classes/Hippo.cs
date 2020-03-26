@@ -8,8 +8,8 @@ namespace OopPrincipals.Classes
 {
     public class Hippo : Aquatic, IAttackPrey, ISwim
     {
+        public override string Name { get; set; } = "Hippo";
         public override string Diet { get; set; } = "Herbivore";
-
         public bool FeelingAggressive { get; set; }
         public string SharpTeeth { get; set; } 
         public override int HoldBreathAmount { get; set; } = 5;

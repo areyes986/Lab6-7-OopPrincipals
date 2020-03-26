@@ -7,6 +7,7 @@ namespace OopPrincipals.Classes
 {
     public class Turtle : Reptiles, IAttackPrey
     {
+        public override string Name { get; set; } = "Turtie";
         public override string Diet { get; set; } = "Omnivore";
         public string SharpTeeth { get; set; } 
 

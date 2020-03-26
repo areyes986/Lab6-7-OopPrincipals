@@ -22,24 +22,22 @@ namespace OopPrincipals
             {
                 var aniSwimming = swim[i];
 
-                if (aniSwimming is Hippo && aniSwimming is Dolphins)
+                if (aniSwimming is Hippo)
                 {
                     var h = (Hippo)aniSwimming;
-                    var d = (Dolphins)aniSwimming;
-                    h.WiggleBody();
-                    d.WiggleBody();
-                    h.Float();
-                    d.Float();
+                    Console.WriteLine(h.WiggleBody());
+                    Console.WriteLine(h.Float());
+                    Console.WriteLine($"I can hold my breath for {h.HoldBreathAmount} minutes!");
+                    Console.WriteLine("=======================================================================");
                 }
-
-                //ICanSwim(swim[i]);
+                else if (aniSwimming is Dolphins)
+                {
+                    var d = (Dolphins)aniSwimming;
+                    Console.WriteLine(d.WiggleBody());
+                    Console.WriteLine(d.Float());
+                    Console.WriteLine($"I can hold my breath for {d.HoldBreathAmount} minutes!");
+                }
             }
-
-
-            //static void ICanSwim(ISwim canSwim)
-            //{
-            //    Console.WriteLine($"We can hold our breath canSwim.HoldBreathAmount));
-            //}
         }
     }
 }

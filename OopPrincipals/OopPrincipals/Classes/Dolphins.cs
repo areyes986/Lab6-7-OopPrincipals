@@ -8,6 +8,7 @@ namespace OopPrincipals.Classes
     public class Dolphins : Aquatic, ISwim
 
     {
+        public override string Name { get; set; } = "Fin";
         public override bool HasLegs { get; set; } = false;
         public override string Diet { get; set; } = "Carnivore";
         public override int HoldBreathAmount { get; set; } = 10;

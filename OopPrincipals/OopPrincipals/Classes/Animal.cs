@@ -6,6 +6,7 @@ namespace OopPrincipals.Classes
 {
      public abstract class Animal
     {
+        public abstract string Name { get; set; }
         public abstract string Diet { get; set; }
         public abstract string Blood { get; set; }
         public abstract string Birth { get; set; }
