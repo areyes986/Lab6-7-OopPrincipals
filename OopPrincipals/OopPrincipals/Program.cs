@@ -26,7 +26,7 @@ namespace OopPrincipals
         {
             ISwim[] swim = new ISwim[2];
 
-            Hippo hiphop = new Hippo() { Name = "Hippy the Hippo", HoldBreathAmount = 10 };
+            Hippo hiphop = new Hippo() { Name = "Hippy the Hippo", HoldBreathAmount = 5 };
             Dolphins dolphins = new Dolphins() { Name = "Fin", HoldBreathAmount = 10 };
 
             swim[0] = hiphop;
@@ -48,7 +48,7 @@ namespace OopPrincipals
                 {
                     var d = (Dolphins)aniSwimming;
                     Console.WriteLine();
-                    Console.WriteLine($"My name is {d.Name} I can hold my breath for {d.HoldBreathAmount} minutes!");
+                    Console.WriteLine($"Hi! My name is {d.Name}!");
                     Console.WriteLine(d.WiggleBody());
                     Console.WriteLine(d.Float());
                     Console.ReadLine();
@@ -93,7 +93,7 @@ namespace OopPrincipals
             }
             else if (userInput == "false")
             {
-                Console.WriteLine($"You're correct! Me having legs is {snek.HasLegs} and being me is definitely {snek.CanRun()}");
+                Console.WriteLine($"You're correct! Me having legs is {snek.HasLegs} and me running is definitely {snek.CanRun()}");
                 Console.WriteLine("Yet that is what makes me so cool!");
 
 
