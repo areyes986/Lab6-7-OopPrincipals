@@ -51,9 +51,9 @@ This lets you group specific information together for reuseability.
 Interfaces tell us what a class can do and classes that implement these interfaces "inherit" the methods and properties in them. If a class implements the interface, the class needs to implement all properties and methods within the interface or you will get an error.  
 
 ### Change Log
-1.4: *Readme* - 3/25/2020
-1.3: *Coded out in program.cs for console* - 3/25/2020 
-1.2: *Unit testing passes* - 3/25/2020
+1.4: *Readme* - 3/25/2020  
+1.3: *Coded out in program.cs for console* - 3/25/2020  
+1.2: *Unit testing passes* - 3/25/2020  
 1.1: *Created structure of the different classes, implemented properties and methods* - 3/24/2020
 
 
