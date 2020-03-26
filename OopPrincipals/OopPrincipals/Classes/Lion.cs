@@ -7,7 +7,7 @@ namespace OopPrincipals.Classes
 {
     public class Lion : Land
     {
-        public override string Name { get; set; } = "Lion";
+        public override string Name { get; set; }
         public override string Diet { get; set; } = "Carnivore";
 
         public override string Sound()

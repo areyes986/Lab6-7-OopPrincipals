@@ -186,7 +186,7 @@ namespace AnimalTests
         {
             Snake snakey = new Snake();
 
-            bool snake = false;
+            bool snake;
             if (snakey is Animal)
             {
                 snake = true;

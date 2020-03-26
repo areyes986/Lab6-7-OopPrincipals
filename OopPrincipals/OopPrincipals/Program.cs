@@ -8,13 +8,27 @@ namespace OopPrincipals
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("WELCOME TO ALLY'S ZOO! Here is a preview of some of our animals, they want to introduce themselves!");
+            Console.ReadLine();
+            WeCanSwim();
+            Console.WriteLine("=======================================================");
+            ReptilesCanMakeSoundsAndEat();
+            Console.WriteLine("=======================================================");
+            PoorSnakeHasNoLegsAndCantRun();
+            Console.ReadLine();
+            Console.WriteLine("That's it for now! BYE BYE! VISIT US AGAIN!");
 
+        }
+        /// <summary>
+        /// This method show an example of interface methods being implemented
+        /// </summary>
+        public static void WeCanSwim()
+        {
             ISwim[] swim = new ISwim[2];
 
-            Hippo hiphop = new Hippo() { HoldBreathAmount = 10 };
-            Dolphins dolphins = new Dolphins() { HoldBreathAmount = 10 };
- 
+            Hippo hiphop = new Hippo() { Name = "Hippy the Hippo", HoldBreathAmount = 10 };
+            Dolphins dolphins = new Dolphins() { Name = "Fin", HoldBreathAmount = 10 };
+
             swim[0] = hiphop;
             swim[1] = dolphins;
 
@@ -25,18 +39,70 @@ namespace OopPrincipals
                 if (aniSwimming is Hippo)
                 {
                     var h = (Hippo)aniSwimming;
+                    Console.WriteLine($"My name is {h.Name} and I can hold my breath for {h.HoldBreathAmount} minutes!");
                     Console.WriteLine(h.WiggleBody());
                     Console.WriteLine(h.Float());
-                    Console.WriteLine($"I can hold my breath for {h.HoldBreathAmount} minutes!");
-                    Console.WriteLine("=======================================================================");
+                    Console.ReadLine();
                 }
                 else if (aniSwimming is Dolphins)
                 {
                     var d = (Dolphins)aniSwimming;
+                    Console.WriteLine();
+                    Console.WriteLine($"My name is {d.Name} I can hold my breath for {d.HoldBreathAmount} minutes!");
                     Console.WriteLine(d.WiggleBody());
                     Console.WriteLine(d.Float());
-                    Console.WriteLine($"I can hold my breath for {d.HoldBreathAmount} minutes!");
+                    Console.ReadLine();
+
                 }
+            }
+        }
+
+        /// <summary>
+        /// This method shows inheritance
+        /// </summary>
+        public static void ReptilesCanMakeSoundsAndEat()
+        {
+            Turtle turti = new Turtle() { Name = "Turtie" };
+            Console.WriteLine($"Hi! My name is {turti.Name} and I make {turti.Sound()} noises!");
+            Console.WriteLine(turti.Eat());
+            Console.WriteLine();
+            Console.ReadLine();
+
+
+            Snake snek = new Snake() { Name = "Snek" };
+            Console.WriteLine($"Hi! My name is {snek.Name} and I make {snek.Sound()} noises!");
+            Console.WriteLine(snek.Eat());
+            Console.ReadLine();
+
+        }
+
+        /// <summary>
+        /// This method displays polymorphism. This virtual property and method were originally set to true but I overrode it to be false.
+        /// </summary>
+        public static void PoorSnakeHasNoLegsAndCantRun()
+        {
+            Snake snek = new Snake() { Name = "Snek" };
+
+            Console.WriteLine($"Hey guys, still me, {snek.Name}");
+            Console.Write("TRUE OR FALSE! I HAVE LEGS AND CAN WALK: ");
+            string userInput = Console.ReadLine().ToLower();
+            if (userInput == "true")
+            {
+                Console.WriteLine($"You are wrong, me having legs is {snek.HasLegs} and me running is definitely {snek.CanRun()}");
+                Console.WriteLine("Yet that is what makes me so cool!");
+            }
+            else if (userInput == "false")
+            {
+                Console.WriteLine($"You're correct! Me having legs is {snek.HasLegs} and being me is definitely {snek.CanRun()}");
+                Console.WriteLine("Yet that is what makes me so cool!");
+
+
+            }
+            else
+            {
+                Console.WriteLine($"That's not a valid answer but me having legs is {snek.HasLegs} and me running is definitely {snek.CanRun()}");
+                Console.WriteLine("Yet that is what makes me so cool!");
+
             }
         }
     }

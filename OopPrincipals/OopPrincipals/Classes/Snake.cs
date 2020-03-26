@@ -7,7 +7,7 @@ namespace OopPrincipals.Classes
 {
     public class Snake : Reptiles, ISwim
     {
-        public override string Name { get; set; } = "Snek";
+        public override string Name { get; set; }
         public override string Diet { get; set; } = "Carnivore";
 
         public override bool HasLegs { get; set; } = false;

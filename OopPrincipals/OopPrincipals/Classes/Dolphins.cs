@@ -8,7 +8,7 @@ namespace OopPrincipals.Classes
     public class Dolphins : Aquatic, ISwim
 
     {
-        public override string Name { get; set; } = "Fin";
+        public override string Name { get; set; }
         public override bool HasLegs { get; set; } = false;
         public override string Diet { get; set; } = "Carnivore";
         public override int HoldBreathAmount { get; set; } = 10;
@@ -34,7 +34,7 @@ namespace OopPrincipals.Classes
 
         public string Float()
         {
-            return "Floating is my name";
+            return "Floating is my middle name";
         }
     }
 }
