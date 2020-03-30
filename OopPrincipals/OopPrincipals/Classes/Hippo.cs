@@ -6,6 +6,12 @@ using OopPrincipals.Interfaces;
 
 namespace OopPrincipals.Classes
 {
+    /// <summary>
+    /// This is a concrete class that is derived from the Aquatic class 
+    /// and also implements the IAttackPrey and ISwim interfaces
+    /// The hippo has specific strings it returns when the methods are used. 
+    /// We also see that the diet is overridden to herbivore and the breathamount overrides to a specific int
+    /// </summary>
     public class Hippo : Aquatic, IAttackPrey, ISwim
     {
         public override string Name { get; set; }

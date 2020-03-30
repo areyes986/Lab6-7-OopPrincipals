@@ -5,6 +5,11 @@ using OopPrincipals.Interfaces;
 
 namespace OopPrincipals.Classes
 {
+
+    /// <summary>
+    /// The is a concrete class that is derived from the land class and implements the IAttackPrey interface
+    /// The methods return a string specific to the wolves class and you can see the diet is overridden to carnivore
+    /// </summary>
     public class Wolves : Land, IAttackPrey
     {
         public override string Name { get; set; }

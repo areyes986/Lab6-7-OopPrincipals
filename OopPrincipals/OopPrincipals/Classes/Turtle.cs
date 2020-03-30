@@ -5,6 +5,11 @@ using OopPrincipals.Interfaces;
 
 namespace OopPrincipals.Classes
 {
+    /// <summary>
+    /// This is a concrete class that is derived from the reptile class and implements the IAttackPrey interface
+    /// All the methods return a string specific to the turtle class
+    /// The diet prop is overridden to be omnivore string
+    /// </summary>
     public class Turtle : Reptiles, IAttackPrey
     {
         public override string Name { get; set; }
