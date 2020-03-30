@@ -4,6 +4,10 @@ using System.Text;
 
 namespace OopPrincipals.Classes
 {
+    /// <summary>
+    /// This is a base/abstract class that is also derived from the Mammals class
+    /// All animals that are derived from this land class will return strings for the following methods and properties
+    /// </summary>
     public abstract class Land : Mammals
     {
         public override string Habitat { get; set; } = "lives on land";

@@ -5,6 +5,10 @@ using OopPrincipals.Interfaces;
 
 namespace OopPrincipals.Classes
 {
+    /// <summary>
+    /// The Dolphin class is derived from the Aquatic class and implements the interface ISwim
+    /// In this concrete class has more specific details on the dolphins traits and what it can do.
+    /// </summary>
     public class Dolphins : Aquatic, ISwim
 
     {
